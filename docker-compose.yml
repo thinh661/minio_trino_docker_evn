@@ -4,7 +4,7 @@ services:
     hostname: trino
     image: 'trinodb/trino:351'
     ports:
-      - '8080:8080'
+      - '8088:8088'
     volumes:
       - ./etc:/usr/lib/trino/etc:ro
     networks:
@@ -61,4 +61,4 @@ services:
 
 networks:
   trino-network:
-    driver: bridge
+    external: true
