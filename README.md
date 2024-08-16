@@ -1,5 +1,10 @@
 # Deploy MinIO and Trino on docker
 
+## First, create the trino-network in docker
+```bash
+docker create network trino-network
+```
+
 ## Setup MINIO (run in port 9000)
 
 First, clone my project to local:
