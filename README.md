@@ -31,7 +31,7 @@ If you see the bucket iris and stock-data, you finish setup MINIO
 
 start Trino CLI:
 ```
-java -jar "./trino-cli-352-executable.jar" (use absolute path if you can't run it)
+java -jar "./trino-cli-352-executable.jar --server http://localhost:8088 " (use absolute path if you can't run it)
 ```
 
 Create schema and create table with: (important: "minio" is schema (iceberg) in Trino)
